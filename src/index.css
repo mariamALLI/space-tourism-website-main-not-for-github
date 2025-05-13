@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-black text-white min-h-screen;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bellefair', serif;
+  }
+
+  .font-belle {
+    font-family: 'Bellefair', serif;
+  }
+
+  .font-barlow {
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .font-barlow_c {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .nav-link {
+    @apply pb-2 border-b-2 border-transparent hover:border-gray-500 transition-colors duration-300;
+  }
+
+  .nav-link.active {
+    @apply border-white;
+  }
+
+  .text-nav-text {
+    @apply text-[16px] tracking-[2.7px] font-normal;
+  }
+
+  .text-nav-text.active {
+    @apply border-b-2 border-white;
+  }
+
+  .text-nav-text:hover {
+    @apply border-b-2 border-gray-500;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+
+  .heading-4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold;
+  }
+
+  .heading-5 {
+    @apply text-lg md:text-xl lg:text-2xl font-bold;
+  }
+
+  .subheading-1 {
+    @apply text-2xl md:text-3xl font-normal;
+  }
+
+  .subheading-2 {
+    @apply text-xl md:text-2xl font-normal;
+  }
+
+  .nav-text {
+    @apply text-base md:text-lg font-normal tracking-wider;
+  }
+
+  .body-text {
+    @apply text-base md:text-lg font-normal leading-relaxed;
+  }
+}
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+/* 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
